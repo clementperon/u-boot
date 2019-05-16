@@ -96,6 +96,8 @@
 };
 
 &ehci0 {
+	phys = <&usb2phy 0>;
+	phy-names = "usb";
 	status = "okay";
 };
 
@@ -120,6 +122,8 @@
 };
 
 &ohci0 {
+	phys = <&usb2phy 0>;
+	phy-names = "usb";
 	status = "okay";
 };
 
@@ -255,7 +259,6 @@
 
 &usb2otg {
 	dr_mode = "host";
-	status = "okay";
 };
 
 &usb2phy {
